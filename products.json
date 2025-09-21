@@ -1,0 +1,30 @@
+[
+  {
+    "id": "n1",
+    "title": "Emerald Aura Necklace",
+    "price": 1299,
+    "category": "Necklace",
+    "img": "https://images.unsplash.com/photo-1606313564200-e75d5e30476b?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "id": "b1",
+    "title": "Gilded Twist Bangle",
+    "price": 799,
+    "category": "Bangle",
+    "img": "https://images.unsplash.com/photo-1599643478160-3a974b4bd57c?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "id": "s1",
+    "title": "Pearl Royale Set",
+    "price": 1999,
+    "category": "Set",
+    "img": "https://images.unsplash.com/photo-1617038260897-3d89c0a95cf9?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "id": "e1",
+    "title": "Starlit Drop Earrings",
+    "price": 599,
+    "category": "Earring",
+    "img": "https://images.unsplash.com/photo-1617038260881-8a423cf2626f?q=80&w=1200&auto=format&fit=crop"
+  }
+]

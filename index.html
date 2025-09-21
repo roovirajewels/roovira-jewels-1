@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roovira – Imitation Jewellery</title>
+  <meta name="description" content="Elegant imitation jewellery – necklaces, bangles, sets.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="container header">
+    <div class="brand">
+      <div class="logo">RJ</div>
+      <div>
+        <h1>Roovira Jewels</h1>
+        <div class="small">Imitation Jewellery • Hand‑picked designs</div>
+      </div>
+    </div>
+    <div class="search">
+      <input id="search" placeholder="Search necklaces, bangles, sets…" />
+    </div>
+    <div class="actions">
+      <button class="btn" id="openCart">Cart (<span id="cartCount">0</span>)</button>
+      <button class="btn" id="openCheckout">Checkout</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="filters" class="small">
+      <span class="tag">All</span>
+      <span class="tag">Necklace</span>
+      <span class="tag">Bangle</span>
+      <span class="tag">Set</span>
+      <span class="tag">Earring</span>
+    </div>
+    <section class="grid" id="grid"></section>
+  </main>
+
+  <footer class="footer container">
+    © <span id="year"></span> Roovira Jewels • Crafted with ♥
+  </footer>
+
+  <!-- Cart Drawer -->
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-header">
+      <strong>Your Cart</strong>
+      <button class="btn" id="closeCart">Close</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="total">
+        <span>Total</span>
+        <span id="cartTotal">₹0</span>
+      </div>
+      <div class="cta-row">
+        <button class="btn" id="clearCart">Clear</button>
+        <button class="btn accent" id="goCheckout">Proceed to Checkout</button>
+      </div>
+      <div class="small">UPI/QR payment supported on Checkout.</div>
+    </div>
+  </aside>
+
+  <!-- Checkout Modal -->
+  <div class="modal" id="checkoutModal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <strong>Checkout</strong>
+        <button class="btn" id="closeCheckout">Close</button>
+      </div>
+      <div class="modal-body">
+        <div class="field">
+          <label>Name</label>
+          <input id="name" placeholder="Your full name">
+        </div>
+        <div class="field">
+          <label>Mobile</label>
+          <input id="mobile" placeholder="10‑digit mobile">
+        </div>
+        <div class="field">
+          <label>Address</label>
+          <input id="address" placeholder="Shipping address">
+        </div>
+        <div class="field">
+          <label>Order Summary</label>
+          <div id="summary"></div>
+        </div>
+        <div class="field">
+          <label>Pay via UPI</label>
+          <div class="small">Scan to pay or tap the UPI link. Amount and note are pre‑filled.</div>
+          <div class="qr">
+            <img id="qrImage" alt="UPI QR" src="assets/sample-qr.png" width="180" height="180">
+          </div>
+          <div class="small">Or open in your UPI app: <span class="code" id="upiLinkText"></span></div>
+        </div>
+        <div class="cta-row">
+          <a class="btn" id="upiLink" target="_blank" rel="noopener">Open UPI App</a>
+          <a class="btn accent" id="confirmPaid" href="success.html">I’ve Paid</a>
+        </div>
+        <div class="small">Note: On free GitHub Pages, automatic payment verification isn’t possible. You’ll get the order details and can verify payment in your UPI app.</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

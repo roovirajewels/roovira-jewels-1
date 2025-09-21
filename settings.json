@@ -1,0 +1,7 @@
+{
+  "merchant_vpa": "your-vpa@upi",
+  "merchant_name": "Roovira Jewels",
+  "currency": "INR",
+  "success_note_prefix": "Roovira Order ",
+  "qr_image_path": "assets/sample-qr.png"
+}
